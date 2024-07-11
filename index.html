@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("rKsNDhpZP-jZN76Kb");
+        })();
+    </script>
+</head>
+<body>
+    <nav id="navbar">
+    <div class="logo">Edna Mwangi</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Edna Mwangi</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#achievements" onclick="toggleMenu()">Achievements</a></li>
+            <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+<section id="profile">
+    <div class="section__pic-container">
+        <img src="./assets/profilepic.jpg" 
+        alt="Edna Mwangi profile picture" 
+        class="section-pic" />
+    </div>
+<div class="section__text">
+       <p class="section__text__p1">Hello, I'm</p>
+       <h1 class="title">Edna Wanja Mwangi</h1>
+       <p class="section__text__p2">Senior Procurement Officer</p>
+    <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/MwangiEdnaWanjaResume.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">
+              Contact Info
+            </button>
+    </div>
+        <div id="socials-container">
+            <img 
+                 src="./assets/linkedin.png"
+                 alt="My LinkeIn profile" 
+                 class="icon"
+                 onclick="location.href='https://www.linkedin.com/in/edna-mwangi/'"
+            />
+        </div>
+</div>
+</section>
+<section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile_pic3.jpeg"
+          alt="Profile picture"
+          class="about-pic"
+        />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+              src="./assets/experience.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <h3>Experience</h3>
+            <p>5+ years
+              <br/><br/><h4>Procurement Officer</h4>
+              National Council for Law Reporting
+                    <br />11/2019 - Present
+              <br /><h4>Finance Assistant</h4>
+              National Council for Law Reporting
+                  <br />05/2019 - 11/2019</p>
+          </div>
+          <div class="details-container">
+            <img
+              src="./assets/education.png"
+              alt="Education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p>B.Sc. Bachelors Degree in Supply Chains Manangement -<h4>Second class Upper honors</h4>.<br/>Jomo Kenyatta University of Agriculture and Technology</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Dedicated and skilled Procurement Officer with a proven track record in procurement strategies, supplier selection, RFP execution, negotiations, and contract management. 
+              <br>Currently serving as a Procurement Officer, demonstrating excellence in coordinating tender committee meetings, driving cost-effective procurement, and maintaining optimal stock levels
+              <br>Enthusiastic about integrating sustainable procurement practices to positively impact any organizatin that I work in.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='#experience'"
+    />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Technical Skills</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Vendor Negotiation</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Procurement Strategies</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Contract Management</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Supply Chain Management</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Risk Management</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+         <h2 class="experience-sub-title">Soft  Skills</h2>
+          <div class="article-container">
+            <article>
+              <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+              />
+            <div>
+               <h3>Effective Communication</h3>
+              <p>clear and concise coordination with stakeholders to enhance operations</p>
+            </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+            <div>
+              <h3>Problem Solving</h3>
+              <p>Analyzes and resolves unexpected challenges to ensure the flow of operations.</p>
+            </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Negotiation Skills</h3>
+                <p>Secures favorable terms with suppliers and logistics providers.</p>
+              </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+            <div>
+              <h3>Strategic Thinker</h3>
+              <p>Develops and implements effective strategies</p>
+           </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='#achievements'"
+    />
+</section>
+  <section id="achievements">
+    <p class="section__text__p1">Browse My</p> 
+    <h1 class="title">Achievements</h1>
+    <div class="achievements-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/procurementicon.jpg"
+              alt="Project 1"
+              class="achievements-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Optimized Procurement Processes</h2>
+          <div class="text-container">
+            <p>
+              Formulated a revolutionary procurement process that reduced lead times by30%. 
+            </p>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/deliveryicon.jpg"
+              alt="Project 2"
+              class="achievements-img"
+            />
+          </div>
+          <h2 class="experience-sub-title achievements">On-time and<br/>fast delivery</h2>
+          <div class="text-container">
+            <P>Increased on-time delivery rate by 15% with collaborative back-order monitoring</P>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/supplychainicon.jpg"
+              alt="Project 3"
+              class="achievements-img"
+            />
+          </div>
+          <h2 class="experience-sub-title achievements-title">Supply Chain<br/>Resilience</h2>
+          <div class="text-container">
+           <p>
+            Drove a supplier diversification initiative that
+            significantly enhanced supply chain stability.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='#testimonials'"
+    />
+  </section>
+  <section id="testimonials">
+    <h1 class="title">Testimonials</h1>
+    <div class="carousel">
+        <div class="carousel-inner">
+          <div class="achievements-details-container">
+            <div class="about-containers">
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/person1.jpg"
+                    alt="Person 1"
+                    class="achievements-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Person 1</h2>
+                <div class="testimonial">
+
+                  <p>
+                    "Working with Edna has been a game-changer for our logistics operations." 
+                  </p>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/person2.jpg"
+                    alt="Person 2"
+                    class="achievements-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title achievements">person 2</h2>
+                <div class="testimonial">
+                  <P>"Edna's expertise in supply chain management is unparalleled. Highly recommended!"</P>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/person3.jpg"
+                    alt="Person 3"
+                    class="achievements-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title achievements-title">Person 3</h2>
+                <div class="testimonial">
+                 <p>
+                  "Edna is a strategic thinker who has transformed our supply chain processes."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      <img
+         src="./assets/arrow.png"
+         alt="Arrow icon"
+         class="icon arrow"
+         onclick="location.href='#contact'"
+      />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="./assets/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:mwangiedna9@gmail.com">mwangiedna9@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./assets/phoneicon.png"
+          alt="phone icon"
+          class="icon contact-icon"
+        />
+        <p>Phone: <a href="tel:+254712545458">+254- 712 545 458</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a href="https://www.linkedin.com/in/edna-mwangi/">LinkedIn</a></p>
+      </div>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Edna Mwangi. All Rights Reserved.</p>
+  </footer>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+    
+    
+    
