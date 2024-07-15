@@ -28,62 +28,75 @@ a,
 
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f1f1f1;
-  padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .nav-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
 }
 
 .nav-links li {
-  margin: 0;
+    margin: 0;
 }
 
 .nav-links li a {
-  text-decoration: none;
-  color: #333333;
-  padding: 5px 10px;
-  display: block;
+    text-decoration: none;
+    color: #333333;
+    padding: 5px 10px;
+    display: block;
 }
 
 /* Hamburger Menu */
 .hamburger-icon {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
 }
 
 .hamburger-icon span {
-  width: 25px;
-  height: 3px;
-  margin: 4px;
-  background-color: #333;
+    width: 25px;
+    height: 3px;
+    margin: 4px;
+    background-color: #333;
+    transition: all 0.3s;
 }
 
 #hamburger-nav {
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: #f1f1f1;
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  width: 200px;
-  border: 1px solid #ccc;
-  padding: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f1f1f1;
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 999;
+}
+#hamburger-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 a {
@@ -111,7 +124,7 @@ a:hover {
 
 .menu-links a {
   display: block;
-  padding: 10px;
+  padding: 5px 10px;
   text-align: center;
   font-size: 1.5rem;
   color: black;
@@ -121,24 +134,24 @@ a:hover {
 
 .menu-links li {
   list-style: none;
+  margin: 5px 0;
 }
 
 .menu-links.open {
   max-height: 300px;
 }
 
-.hamburger-icon.open span:first-child {
-  transform: rotate(45deg) translate(10px, 5px);
+.hamburger-icon.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
 }
 
 .hamburger-icon.open span:nth-child(2) {
-  opacity: 0;
+    opacity: 0;
 }
 
-.hamburger-icon.open span:last-child {
-  transform: rotate(-45deg) translate(10px, -5px);
+.hamburger-icon.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
 }
-
 .hamburger-icon span:first-child {
   transform: none;
 }
