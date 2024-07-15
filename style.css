@@ -189,7 +189,7 @@ section {
   display: flex;
   height: 400px;
   width: 400px;
-  padding-left: 6rem;
+  padding-left: 8rem;
   margin: auto 0;
 }
 
@@ -200,7 +200,7 @@ section {
 
 .section-pic{
     border-radius: 3rem;
-    margin-left: .5rem;
+    margin-left: .6rem;
 }
 
 .section__text p {
