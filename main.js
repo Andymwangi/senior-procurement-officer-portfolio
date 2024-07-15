@@ -1,8 +1,17 @@
 function toggleMenu() {
     const menuLinks = document.getElementById('hamburger-nav');
     const hamburgerIcon = document.querySelector('.hamburger-icon');
-    menuLinks.style.display = menuLinks.style.display === 'flex' ? 'none' : 'flex';
-    hamburgerIcon.classList.toggle('open');
+    const navLinks = document.querySelector('#navbar .nav-links');
+
+    if (menuLinks.style.display === 'flex') {
+        menuLinks.style.display = 'none';
+        hamburgerIcon.classList.remove('open');
+        navLinks.style.display = 'flex';
+    } else {
+        menuLinks.style.display = 'flex';
+        hamburgerIcon.classList.add('open');
+        navLinks.style.display = 'none';
+    }
 }
 document.addEventListener('DOMContentLoaded', function () {
     const carouselInner = document.querySelector('.carousel-inner');
