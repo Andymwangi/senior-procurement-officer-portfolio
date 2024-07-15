@@ -33,9 +33,6 @@ nav {
     align-items: center;
     background-color: #f1f1f1;
     padding: 10px 20px;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
 }
 
 .logo {
@@ -82,14 +79,15 @@ nav {
     flex-direction: column;
     align-items: flex-start;
     background-color: #f1f1f1;
-    position: fixed;
+    position: absolute;
     top: 60px;
     right: 20px;
     width: 200px;
     border: 1px solid #ccc;
     padding: 10px;
-    z-index: 999;
+    z-index: 10;
 }
+
 #hamburger-nav ul {
     list-style: none;
     padding: 0;
