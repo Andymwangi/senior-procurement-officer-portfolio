@@ -1,16 +1,13 @@
 function toggleMenu() {
     const menuLinks = document.getElementById('hamburger-nav');
     const hamburgerIcon = document.querySelector('.hamburger-icon');
-    const navLinks = document.querySelector('#navbar .nav-links');
 
     if (menuLinks.style.display === 'flex') {
         menuLinks.style.display = 'none';
         hamburgerIcon.classList.remove('open');
-        navLinks.style.display = 'flex';
     } else {
         menuLinks.style.display = 'flex';
         hamburgerIcon.classList.add('open');
-        navLinks.style.display = 'none';
     }
 }
 document.addEventListener('DOMContentLoaded', function () {
