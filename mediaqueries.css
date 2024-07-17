@@ -192,9 +192,6 @@
 .hamburger-icon {
     display: flex;
 }
-#hamburger-nav {
-    display: none;
- }
   #contact {
     padding: 10px;
     margin: 10px;
@@ -239,9 +236,6 @@
 .hamburger-icon {
     display: flex;
 }
- #hamburger-nav {
-    display: none;
- }
   #contact {
     padding: 10px;
     margin: 10px;
@@ -291,12 +285,9 @@
   .nav-links {
     display: none;
 }
-.hamburger-icon {
+  .hamburger-icon {
     display: flex;
 }
-#hamburger-nav {
-    display: none;
- }
   .nav-links {
     flex-direction: column;
     align-items: flex-start;
