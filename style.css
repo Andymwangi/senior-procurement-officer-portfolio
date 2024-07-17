@@ -97,8 +97,7 @@ nav {
   width: auto;
   padding: 2px;
   z-index: 999;
-  border: 0.2px solid #ccc;
-  border-radius: 0.5rem;
+  border:none;
   margin: 0; /* Remove margin */
 }
 
